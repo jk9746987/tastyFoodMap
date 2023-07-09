@@ -6,6 +6,7 @@
     </button>
     <div class="bg-blue-500 text-white p-4">
       歡迎使用 Tailwind CSS！
+      test
     </div>
   </div>
 </template>
