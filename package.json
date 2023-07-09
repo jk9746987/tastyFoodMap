@@ -11,8 +11,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prettier": "prettier --write \"src/**/*.js\"",
-    "lint-staged": "lint-staged",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
@@ -40,15 +40,15 @@
     "vite": "^4.3.9",
     "vue-tsc": "^1.6.5"
   },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint"
+  },
   "lint-staged": {
     "*.{js,json,md,ts,vue}": [
-      "prettier --write",
-      "npm run prettier",
+      "prettier --write", 
       "eslint --fix",
       "git add"
     ]
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm run precommit"
-  }
 }
