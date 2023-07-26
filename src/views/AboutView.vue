@@ -7,9 +7,6 @@
 </template>
 
 <style>
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 @media (min-width: 1024px) {
     .about {
         min-height: 100vh;
